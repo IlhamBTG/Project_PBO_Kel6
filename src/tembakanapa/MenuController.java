@@ -20,7 +20,10 @@ public class MenuController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // Tambahkan aksi untuk ImageView sebagai tombol
         quitBtn.setOnMouseClicked(event -> quitApplication());
+    }
+    
+    private void quitApplication() {
+        System.exit(0); 
     }
 }
