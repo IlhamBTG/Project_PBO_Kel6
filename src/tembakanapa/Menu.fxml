@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="464.0" prefWidth="482.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tembakanapa.MenuController">
+   <children>
+      <ImageView fitHeight="464.0" fitWidth="482.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/menupage.jpg" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>
