@@ -1,21 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package tembakanapa;
 
-import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 
-/**
- *
- * @author NITRO 5
- */
 public class Player extends Character{
-    private AnchorPane gamePane;
-    private ImageView player;
-    private FXMLDocumentController controller;
     
     public Player(AnchorPane gamePane, ImageView player, FXMLDocumentController controller){
         super(gamePane, player, controller);
@@ -39,8 +27,7 @@ public class Player extends Character{
                 getGamePane().getChildren().remove(getPlayer());
                 getGamePane().getChildren().remove(enemy);
                 getController().myEnemy.enemies.remove(enemy);
-                
-            // Handle game over or any necessary action after collision   
+                  
             try {
                 getController().endGame();
             } catch (Exception e) {
