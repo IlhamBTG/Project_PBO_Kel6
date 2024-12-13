@@ -22,6 +22,21 @@ public class MenuController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         quitBtn.setOnMouseClicked(event -> quitApplication());
     }
+
+    @FXML
+    public void startGame(MouseEvent event) throws Exception {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("FXMLDocument.fxml"));
+        Parent root = loader.load();
+        FXMLDocumentController controller = loader.getController();
+
+        Stage stage = (Stage) playBtn.getScene().getWindow();
+        Scene newScene = new Scene(root);
+
+        stage.setScene(newScene);
+        stage.show();
+
+        controller.setFocusOnGamePane();
+    }
     
     private void quitApplication() {
         System.exit(0); 
