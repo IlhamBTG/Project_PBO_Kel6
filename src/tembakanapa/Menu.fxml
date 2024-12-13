@@ -17,5 +17,10 @@
             <Image url="@../image/play.png" />
          </image>
       </ImageView>
+      <ImageView fx:id="quitBtn" fitHeight="52.0" fitWidth="117.0" layoutX="182.0" layoutY="306.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/quit.png" />
+         </image>
+      </ImageView>
     </children>
 </AnchorPane>
