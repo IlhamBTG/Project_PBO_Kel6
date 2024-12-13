@@ -12,5 +12,10 @@
             <Image url="@../image/menupage.jpg" />
          </image>
       </ImageView>
+      <ImageView fx:id="playBtn" fitHeight="49.0" fitWidth="117.0" layoutX="182.0" layoutY="251.0" onMouseClicked="#startGame" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/play.png" />
+         </image>
+      </ImageView>
     </children>
 </AnchorPane>
